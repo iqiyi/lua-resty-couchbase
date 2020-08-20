@@ -1,5 +1,3 @@
-This module is licensed under the BSD license.
-
 Copyright (C) 2015-2020, by goecho  hyphen9@foxmail.com, iQIYI Inc.
 
 All rights reserved.
