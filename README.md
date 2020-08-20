@@ -1,0 +1,2 @@
+# lua-resty-couchbase
+业界第一个(也是唯一一个)使用cosocket纯lua实现的couchbase的client，已经在爱奇艺S级服务播放服务稳定运行4年多，线上支持峰值QPS达到20W，在OpenResty架构下面，可以直接从nginx上面访问couchbase
