@@ -46,6 +46,8 @@ Synopsis
 ```lua
     lua_package_path "/path/to/lua-resty-couchbase/lib/?.lua;;";
 
+    lua_shared_dict ldict 10m;
+
     server {
         location /test {
             content_by_lua_block {
@@ -58,8 +60,8 @@ Synopsis
                 end
 
                 local conf = {
-                    hosts = { "10.10.8.96:8091", "10.10.8.97:8091"},
-                    buket_name = "test",
+                    hosts = { "10.10.10.1:8091", "10.10.10.2:8091"},
+                    bucket_name = "test",
                     bucketpwd = "test-password",
                 }
 
@@ -78,7 +80,7 @@ Synopsis
                 client:set(key1, "{}")
 
                 -- test get_bluk
-                local values, err = client:get_bluk({key, key1})
+                local values, err = client:get_bluk(key, key1)
                 if not err then
                     ngx.say(cjson.encode(values))
                 end
