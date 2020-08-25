@@ -3,7 +3,8 @@ Name
 
 lua-resty-couchbase - Lua couchbase client driver for the ngx_lua based on the cosocket API.
 
-业界第一个(同时也是目前唯一)使用cosocket纯lua实现的couchbase的client，已经在爱奇艺S级服务播放服务稳定运行4年多，线上支持峰值QPS达到20W，在OpenResty架构下面，可以直接从nginx上面访问CouchBase.
+It has been running stably on IQIYI Play Service for more than 5 years, and the online support QPS reaches 20W. Under the OpenResty architecture, CouchBase can be accessed directly from nginx.
+使用cosocket纯lua实现的couchbase的client，已经在爱奇艺重要的播放服务稳定运行5年多，线上支持峰值QPS达到20W，在OpenResty架构下面，可以直接从nginx上面访问CouchBase.
 
 Table of Contents
 =================
@@ -187,7 +188,7 @@ Please report bugs or submit patches by
 Author
 ======
 
-goecho <hyphen9@foxmail.com>
+goecho <gaofeng@qiyi.com>
 
 [Back to TOC](#table-of-contents)
 
@@ -196,7 +197,7 @@ Copyright and License
 
 This module is licensed under the BSD license.
 
-Copyright (C) 2015-2020, by goecho hyphen9@foxmail.com, iQIYI Inc.
+Copyright (C) 2015-2020, by goecho gaofeng@qiyi.com, iQIYI Inc.
 
 All rights reserved.
 
