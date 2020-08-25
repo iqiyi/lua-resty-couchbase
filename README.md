@@ -1,6 +1,11 @@
 Name
 ====
 
+[![GitHub issues](https://img.shields.io/github/issues/iqiyi/lua-resty-couchbase)](https://github.com/iqiyi/lua-resty-couchbase/issues)
+[![GitHub forks](https://img.shields.io/github/forks/iqiyi/lua-resty-couchbase)](https://github.com/iqiyi/lua-resty-couchbase/network)
+[![GitHub stars](https://img.shields.io/github/stars/iqiyi/lua-resty-couchbase)](https://github.com/iqiyi/lua-resty-couchbase/stargazers)
+[![GitHub license](https://img.shields.io/github/license/iqiyi/lua-resty-couchbase)](https://github.com/iqiyi/lua-resty-couchbase/blob/master/license.txt)
+
 lua-resty-couchbase - Lua couchbase client driver for the ngx_lua based on the cosocket API.
 
 It has been running stably on IQIYI Play Service for more than 5 years, and the online support QPS reaches 20W. Under the OpenResty architecture, CouchBase can be accessed directly from nginx.
