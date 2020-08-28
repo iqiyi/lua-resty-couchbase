@@ -52,7 +52,13 @@ Installation
 
 ```bash
 
+#opm
+
 opm install iqiyi/lua-resty-couchbase
+
+# luarocks
+
+luarocks install --local lua-resty-couchbase
 
 ```
 
