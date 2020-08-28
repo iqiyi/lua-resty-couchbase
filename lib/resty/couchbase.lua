@@ -31,7 +31,7 @@ local tcp = ngx.socket.tcp
 local ldict = ngx.shared.ldict
 local base64 = ngx.encode_base64
 
-local _M = { _VERSION = '0.2' }
+local _M = { _VERSION = '0.3' }
 local mt = { __index = _M }
 local vbuckets = {}
 
