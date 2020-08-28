@@ -87,25 +87,25 @@ Synopsis
                 client:set(key1, "{}")
 
                 -- test get_bluk
-                local values, err = client:get_bluk(key, key1)
-                if not err then
+                local values, bluk_err = client:get_bluk(key, key1)
+                if not bluk_err then
                     ngx.say(cjson.encode(values))
                 end
 
                 -- test n1ql
-                local result, err = client:query('SELECT country FROM `travel-sample` WHERE name = "Excel Airways";')
-                if not err then
+                local result, query_err = client:query('SELECT country FROM `travel-sample` WHERE name = "Excel Airways";')
+                if not query_err then
                     ngx.say(result)
                 end
 
                 -- test get get_from_replica
-                local value, err = client:get(key)
+                local value, get_err = client:get(key)
                 if value then
                     ngx.say(value)
                 else
-                    if err then
-                        if string.find(err, "Not found") then
-                            ngx.log(ngx.INFO, "key not found: ", key, " error: ", err)
+                    if get_err then
+                        if string.find(get_err, "Not found") then
+                            ngx.log(ngx.INFO, "key not found: ", key, " error: ", get_err)
                             ngx.say(get_from_service())
                         else
                             local value_bak, err_bak = client:get_from_replica(key)
