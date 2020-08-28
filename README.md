@@ -18,12 +18,12 @@ Table of Contents
 * [Name](#name)
 * [Status](#status)
 * [Description](#description)
+* [Installation](#installation)
 * [Synopsis](#synopsis)
 * [Debugging](#debugging)
 * [Automatic Error Logging](#automatic-error-logging)
 * [Check List for Issues](#check-list-for-issues)
 * [Limitations](#limitations)
-* [Installation](#installation)
 * [TODO](#todo)
 * [Bugs and Patches](#bugs-and-patches)
 * [Author](#author)
@@ -46,6 +46,15 @@ This Lua library takes advantage of ngx_lua's cosocket API, which ensures
 100% nonblocking behavior.
 
 Note that at least [ngx_lua 0.5.14](https://github.com/chaoslawful/lua-nginx-module/tags) or [OpenResty 1.2.1.14](http://openresty.org/#Download) is required.
+
+Installation
+=======
+
+```bash
+
+opm install iqiyi/lua-resty-couchbase
+
+```
 
 Synopsis
 ========
